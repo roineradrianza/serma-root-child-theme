@@ -1,0 +1,1404 @@
+/*
+Theme Name: Ser Madre Root Child
+Theme URI: http://wpshop.biz/themes/root
+Author: WPShop.biz
+Author URI: http://wpshop.biz/
+Developer: Roiner Adrianza
+Template: root
+Version: 1.0.0
+*/
+
+/* Below you can add your CSS styles */
+/* Ниже Вы можете добавить свои CSS стили */
+
+:root {
+  --main-color: #62cef9;
+  --text-color: #6a6b7a;
+  --heading-color: #2d3e48;
+}
+
+.bg-primary {
+  background-color: var(--main-color) !important;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.content-area {
+  width: 820px;
+  padding-right: 40px;
+}
+
+.serma-container,
+.serma-container-md {
+  width: 100% !important;
+}
+
+.serma-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.serma-container-md {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.entry-content {
+  padding-left: 0px;
+}
+
+.site-content {
+  padding: 0px;
+}
+
+.widget-area .widget.widget_block {
+  position: sticky;
+  top: 0;
+  overflow: auto;
+}
+
+main.serma-main {
+  width: 70%;
+}
+
+main.serma-container aside {
+  width: 30%;
+}
+
+.serma-loader-button {
+  font-size: 18px;
+  padding: 8px 24px;
+  font-weight: 800;
+  color: var(--main-color);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+}
+
+.container.newsletter,
+.newsletter {
+  padding: 15px 20px 20px 15px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 30px -15px rgb(0 0 0 / 16%);
+  background-color: white;
+}
+
+.newsletter .newsletter-title {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter input[type="telephone"] {
+  background-color: #fff;
+  border-color: #130d0d12;
+  border-width: 1px;
+  border-radius: 20px 20px 20px 20px;
+  line-height: 1.4;
+  font-size: 15px;
+  min-height: 40px;
+  padding: 4px 14px;
+  outline-width: 0px;
+}
+
+.newsletter input:focus-visible {
+  outline: 1px solid var(--main-color);
+}
+
+.newsletter button[type="submit"] {
+  padding: 10px 27px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.newsletter button[type="submit"] span {
+  font-weight: 500;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* 
+List style helpers
+*/
+
+.list-style-none {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+/*
+flex helpers
+*/
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-flow-wrap {
+  flex-flow: wrap;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-none {
+  flex: none;
+}
+
+/* 
+Display helpers
+*/
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/* 
+Position helpers
+*/
+
+.p-sticky {
+  position: sticky;
+  top: 0;
+  overflow: auto;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+.p-relative {
+  position: relative;
+}
+
+/*
+ Grid helpers
+*/
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/*
+ Spacing helpers
+*/
+
+.mt-1 {
+  margin-top: 12px;
+}
+
+.mt-2 {
+  margin-top: 24px;
+}
+
+.mt-3 {
+  margin-top: 36px;
+}
+
+.mt-4 {
+  margin-top: 48px;
+}
+
+.mt-5 {
+  margin-top: 60px;
+}
+
+.mt-6 {
+  margin-top: 72px;
+}
+
+.mb-1 {
+  margin-bottom: 12px;
+}
+
+.mb-2 {
+  margin-bottom: 24px;
+}
+
+.mb-3 {
+  margin-bottom: 36px;
+}
+
+.mt-3 {
+  margin-top: 36px;
+}
+
+.mr-1 {
+  margin-right: 12px;
+}
+
+.ml-1 {
+  margin-left: 12px;
+}
+
+.ml-2 {
+  margin-left: 24px;
+}
+
+.ml-3 {
+  margin-left: 36px;
+}
+
+.my-1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.my-2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.my-3 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.mt-n1 {
+  margin-top: -12px;
+}
+
+.mt-n2 {
+  margin-top: -24px;
+}
+
+.mt-n3 {
+  margin-top: -36px;
+}
+
+.px-1 {
+  padding: 0px 12px;
+}
+
+.px-2 {
+  padding: 0px 24px;
+}
+
+.px-3 {
+  padding: 0px 36px;
+}
+
+.pb-1 {
+  padding-bottom: 12px;
+}
+
+.pb-2 {
+  padding-bottom: 24px;
+}
+
+.pb-3 {
+  padding-bottom: 36px;
+}
+
+.pt-1 {
+  padding-top: 12px;
+}
+
+.pt-2 {
+  padding-top: 24px;
+}
+
+.pt-3 {
+  padding-top: 36px;
+}
+
+.py-1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-2 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-3 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.pr-1 {
+  padding-right: 12px;
+}
+
+.pr-2 {
+  padding-right: 24px;
+}
+
+.pr-3 {
+  padding-right: 36px;
+}
+
+.pl-1 {
+  padding-left: 12px;
+}
+
+.pl-2 {
+  padding-left: 24px;
+}
+
+.pl-3 {
+  padding-left: 36px;
+}
+
+/*
+ Text helpers
+*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.primary-text {
+  color: var(--main-color);
+}
+
+.secondary-text {
+  color: var(--text-color);
+}
+
+.heading-text {
+  color: var(--heading-color);
+}
+
+.black-text {
+  color: #000;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.font-weight-bold {
+  font-weight: 800;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.font-weight-regular {
+  font-weight: 500;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 200;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  flex-wrap: inherit;
+}
+
+/*
+ Article
+    */
+
+.breadcrumb {
+  font-size: 95%;
+}
+
+.breadcrumb a {
+  font-weight: 400;
+  color: #999;
+  text-decoration: underline;
+}
+
+.entry-meta span {
+  font-size: 15px;
+}
+
+.entry-meta__tag {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 15px;
+  border: 1px solid #130d0d12;
+  background: transparent;
+  border-radius: 20px;
+  margin: 0 10px 10px 0;
+}
+
+.entry-meta__tag:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.entry-meta__tag:before {
+  content: "";
+}
+
+.author-box {
+  border: 1px solid #d4d5da;
+  border-radius: 10px;
+  padding: 20px 40px 30px;
+}
+
+.author-header_icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+hr {
+  height: 1px;
+  background-color: #d4d5da;
+  border: none;
+}
+
+hr.serma-h-divider {
+  width: 100%;
+  background-color: #d4d5da6b;
+}
+
+hr.pink-divider {
+  background-color: #fc88ac;
+  width: 50px;
+  height: 6px;
+  border-radius: 0px 15px 15px 0px;
+  float: left;
+}
+
+.b-share__title h3 {
+  font-size: 1.3em;
+}
+
+.b-related__header h3 {
+  font-size: 1em;
+}
+
+.b-share--post {
+  border: 0px;
+  padding: 0px;
+}
+
+.table-of-contents {
+  border-radius: 15px;
+  padding: 15px 30px 40px 30px;
+  background-color: #f2f6fe;
+  margin-left: 0px;
+}
+.table-of-contents ol li:before {
+  color: black;
+}
+
+.table-of-contents p.toc_title {
+  text-align: left;
+  font-weight: 600;
+}
+
+.table-of-contents ol li {
+  font-size: 16px;
+  padding: 5px 0px;
+  font-weight: 500;
+}
+
+.table-of-contents ol.table-of-contents__list li a {
+  color: #585ce5;
+}
+
+.table-of-contents ol > li > a,
+.table-of-contents ol .level-1 a {
+  border-bottom: 4px solid #62cef97d;
+}
+
+.table-of-contents .toc_number {
+  color: black;
+}
+
+.b-share__ico {
+  padding: 20px 56px;
+}
+
+.b-share__ico:after {
+  padding: 5px;
+}
+
+.serma-social-desktop-btns .p-sticky {
+  padding-top: 40px;
+}
+
+.serma-social-desktop-btns .p-sticky {
+  max-height: 340px;
+}
+
+.serma-social-btn {
+  padding: 13px 15px;
+  color: white;
+  border-radius: 8px;
+}
+
+.serma-copy {
+  background-color: var(--text-color);
+}
+
+.serma-twitter {
+  background-color: #1da1f2;
+}
+
+.serma-pinterest {
+  background-color: #e60023;
+}
+
+.b-share__whatsapp,
+.serma-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+}
+
+.b-share__fb,
+.serma-facebook {
+  display: inline-block;
+  background-color: #3b5998;
+}
+
+.post-card {
+  width: 370px;
+  max-width: 100%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 30px -15px rgb(95 194 236 / 35%);
+}
+
+.post-card__image {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.post-card__image img,
+.post-card__image .thumb-wide {
+  height: 180px;
+  max-height: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+.post-card__image .entry-meta {
+  padding: 20px 24px 10px;
+  opacity: 1;
+  background-image: gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+  transition: background-image 0.3s ease-out;
+}
+
+.post-card__image .entry-meta:hover {
+  opacity: 1;
+  background-image: gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+  transition: background-image 0.3s ease-in;
+}
+
+.entry-category {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 800;
+  background-color: #efefef;
+  border-radius: 20px;
+  padding: 0.25em 1em;
+}
+
+.entry-category span {
+  font-size: 12px;
+}
+
+.entry-title a {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.entry-title a:hover {
+  border-bottom: none;
+}
+
+.post-card__content {
+  font-size: 16px;
+}
+
+.post-card__content.px-2.mb-2:after {
+  content: "...";
+}
+
+.entry-footer {
+  font-size: 12px;
+  border-top: 1px solid #efefef;
+}
+
+.entry-footer .entry-date {
+  margin-right: 0px;
+}
+
+/*
+ ARCHIVE
+*/
+
+.serma-archive-container .post-card {
+  width: 44%;
+}
+
+ul.serma-menu-categories {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+ul.serma-menu-categories li {
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #130d0d12;
+  border-radius: 55px;
+  font-weight: 600;
+}
+
+ul.serma-menu-categories .swipe-item {
+  display: none;
+  border: none;
+}
+
+ul.serma-menu-categories li:hover,
+ul.serma-menu-categories li.current-menu-item {
+  border-color: var(--main-color);
+}
+ul.serma-menu-categories li a {
+  color: var(--text-color);
+}
+
+ul.serma-menu-categories li:hover a,
+ul.serma-menu-categories li.current-menu-item span {
+  color: var(--main-color);
+}
+
+.cli-tab-footer .wt-cli-privacy-accept-btn {
+  background-color: rgb(95, 194, 236) !important;
+}
+
+.site-header-inner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main-navigation {
+  border-top: 1px solid #d4d5da;
+  border-bottom: 1px solid #d4d5da;
+}
+
+.menu-nav-menu-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-nav-menu-container li.menu-item:before {
+  content: "";
+  padding: 10px 15px;
+  background-repeat: no-repeat;
+}
+
+.menu-nav-menu-container li.menu-item.menu-item-has-children > a:after {
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  margin-left: 25px;
+}
+
+ul#header_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mob-hamburger .opened-menu {
+  display: none;
+}
+
+.mob-hamburger.active .closed-menu {
+  display: inline;
+}
+
+.mob-hamburger.active .closed-menu {
+  display: none;
+}
+
+.mob-hamburger.active .opened-menu {
+  display: inline;
+}
+li.comunidad-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/comunidad.svg);
+}
+
+li.utilidades-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/utilidades.svg);
+}
+
+li.contenido-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/contenido.svg);
+}
+
+li.contenido-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/contenido.svg);
+}
+
+li.servicios-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/servicios.svg);
+}
+
+li.herramientas-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/herramientas.svg);
+}
+
+li.marketplace-item:before {
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/marketplace.svg);
+}
+.elementor-nav-menu--main .elementor-nav-menu ul {
+  border: 1px solid #d4d5da;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu ul li {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu ul li a {
+  font-size: 16px;
+  padding-right: 70px;
+}
+
+ul.sub-menu li a:before {
+  content: "";
+  padding: 0px 8px;
+  background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/arrow-right.svg);
+  background-repeat: no-repeat;
+}
+
+.main-navigation ul li > .sub-menu {
+  box-shadow: none;
+  border: 1px solid #d4d5da;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.main-navigation ul li > .sub-menu a {
+  line-height: 0.2;
+}
+
+.site-branding {
+  padding: 20px 0 0 0;
+}
+
+.mob-hamburger {
+  position: relative;
+  width: 38px;
+  height: 28px;
+  padding-top: 8px;
+  margin-left: 20px;
+  border-top: 4px solid #212121;
+  border-bottom: 4px solid #212121;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mob-hamburger.active {
+  padding-top: 12px;
+  opacity: 1;
+}
+
+/*header row*/
+
+.header-row {
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.hr-col-1 {
+  grid-area: 1 / 1 / 2 / 2;
+  grid-row-end: none;
+}
+.hr-col-2 {
+  grid-area: 1 / 2 / 2 / 3;
+  grid-row-end: none;
+  display: inline-grid;
+  justify-items: center;
+}
+.hr-col-3 {
+  grid-area: 1 / 3 / 2 / 4;
+  grid-row-end: none;
+}
+
+.search-container {
+  width: 80%;
+  padding: 12px 25px;
+  max-height: 50px;
+  background-color: #f1f2f3;
+  border-radius: 200px;
+}
+.search-container input {
+  width: 92%;
+  border: none;
+  background-color: transparent;
+}
+
+.search-container input:focus-visible {
+  outline-width: 0px;
+}
+
+.search-container [type="submit"] {
+  border: none;
+  background-color: transparent;
+}
+
+.search-container [type="submit"] span {
+  color: #8d8d8d;
+}
+
+.register-container button {
+  color: #55595c;
+  border: 2px solid #55595c;
+  border-radius: 4px;
+  color: #55595c;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 30px;
+}
+
+/*
+Footer
+*/
+
+.footer-row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column-gap: 75px;
+  grid-row-gap: 0px;
+}
+
+.footer-col-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.footer-col-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.footer-col-3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.footer-col-4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.sendy-fn-row {
+  display: grid;
+  grid-template-columns: 90% 8%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.sendy-fn-col-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.sendy-fn-col-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+footer .newsletter {
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0px;
+}
+
+footer .newsletter button[type="submit"] {
+  padding: 7px 12px;
+}
+
+footer ul li a {
+  color: var(--text-color);
+}
+
+footer ul li a:hover {
+  color: var(--main-color);
+}
+
+.site-footer-inner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.social-media-link {
+  border-radius: 25px;
+  border: 2px solid #cbcbcb;
+  padding: 9px 10px;
+}
+
+.social-media-link span {
+  color: #8a8a8a;
+}
+
+.social-media-link:hover,
+.social-media-link:hover span {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.social-media-link.google-plus {
+  padding: 9px 8px;
+}
+
+.social-media-link.instagram {
+  padding: 9px 12px;
+}
+
+.footer-info {
+  padding: 25px;
+  background-color: var(--heading-color);
+  color: white;
+}
+
+.recent-title h2 span:nth-child(2) {
+  display: none;
+}
+
+.hero-section {
+  padding: 70px 40px 70px 40px;
+  background-position: 0px 96%;
+  background-size: cover;
+}
+.hero-section h1 {
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.serma-author-container {
+  border-radius: 10px;
+  padding: 20px 40px;
+  background-color: #62cef91b;
+}
+.serma-author-container h2 {
+  font-size: 30px;
+  color: #585ce5;
+}
+
+.serma-avatar-container .avatar {
+  border-radius: 100px;
+}
+
+.serma-author-container .fa-xs {
+  font-size: 0.65em;
+}
+
+.search-section .search-container {
+  width: 45%;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+.search-section .search-container input {
+  width: 93%;
+}
+
+.serma-field-input {
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.serma-cta-baby-names {
+  background-color: #ecac4a40;
+  border-radius: 45px 0px 40px 0px;
+}
+
+    .serma-cta-baby-names .serma-cta-image {
+    height: 100%;
+    }
+
+    .serma-cta-baby-names .serma-cta-container {
+    padding: 30px 0px;
+    width: 60%;
+    }
+
+    .serma-cta-baby-names .serma-submit-btn {
+    background-color: #4ac989;
+    padding: 12px 40px;
+    border-radius: 5px;
+    }
+
+    .serma-cta-baby-names .basic-info input {
+    width: 48.4%;
+    }
+
+    .serma-cta-baby-names .basic-info.d-flex {
+    display: inline;
+    }
+
+    .serma-cta-baby-names .serma-cta-image-container {
+        width: 40%;
+    }
+
+@media screen and (max-width: 767px) {
+  .mob-hamburger {
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    padding-top: 12px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .search-form {
+    padding: 0px 20px;
+  }
+
+  .search-form .search-form__text {
+    background-color: #f1f2f3;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 15px;
+  }
+
+  .search-form .search-form__submit {
+    top: 0;
+    right: 30px;
+  }
+
+  #header_menu li.menu-item > a {
+    padding-left: 60px;
+    color: #262d47;
+    font-weight: bold;
+  }
+
+  .menu-nav-menu-container li.menu-item:before {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 9px;
+    padding: 15px 15px;
+  }
+
+  #header_menu ul.sub-menu li a {
+    color: #8d8d8d;
+    font-weight: normal;
+  }
+
+  .main-navigation
+    .menu-nav-menu-container
+    li.menu-item.menu-item-has-children
+    > a:after,
+  ul.sub-menu li a:before {
+    display: none;
+  }
+
+  .main-navigation ul li.menu-item-has-children:after,
+  .main-navigation ul li.menu-item-has-children.open:after {
+    color: #8d8d8d;
+    font-size: 14px;
+  }
+
+  .main-navigation ul li.menu-item-has-children.open:after {
+    content: "\f077";
+  }
+
+  .main-navigation ul li.menu-item-has-children:after {
+    content: "\f078";
+  }
+
+  .content-area {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .b-share__title,
+  .b-related__header {
+    flex-direction: column;
+  }
+
+  .b-share__title h3,
+  .b-related__header h3 {
+    font-size: 1.3em;
+  }
+
+  .b-related__header .text-left,
+  .b-share__title .text-left {
+    text-align: center;
+  }
+
+  .serma-social-desktop-btns {
+    display: none;
+  }
+
+  .serma-archive-container .post-card {
+    width: 100%;
+  }
+
+  ul.serma-menu-categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  ul.serma-menu-categories li {
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+
+  ul.serma-menu-categories li a,
+  ul.serma-menu-categories li span {
+    font-size: 14px;
+  }
+
+  ul.serma-menu-categories .swipe-item {
+    display: inline-block;
+  }
+
+  ul.serma-menu-categories .swipe-item #mobile-slider-icon {
+    padding-top: 20px;
+  }
+
+  ul.serma-menu-categories .swipe-item #mobile-slider-icon img {
+    max-width: 25px;
+  }
+
+  aside.widget-area {
+    display: none;
+  }
+
+  main.serma-main {
+    width: 100%;
+  }
+
+  .b-related__items.d-flex {
+    flex-direction: column;
+  }
+
+  .social-buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .serma-container.d-flex,
+  ul#header_menu {
+    flex-direction: column;
+  }
+
+  #header_nav_menu li.menu-item > a {
+    padding-left: 15px;
+  }
+
+  #header_nav_menu li.menu-item > a:before {
+    opacity: 1 !important;
+    margin-left: -35px;
+    width: 30px;
+    content: "";
+    height: 30px;
+  }
+
+  #header_nav_menu ul.sub-menu li.menu-item > a:before {
+    width: 15px;
+    height: 15px;
+  }
+
+  #header_nav_menu li.menu-item.nav-search-bar > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #header_nav_menu li.menu-item.nav-search-bar .elementor-element {
+    width: 100%;
+  }
+
+  #header_nav_menu li.comunidad-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/comunidad.svg);
+  }
+
+  #header_nav_menu li.utilidades-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/utilidades.svg);
+  }
+
+  #header_nav_menu li.contenido-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/contenido.svg);
+  }
+
+  #header_nav_menu li.servicios-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/servicios.svg);
+  }
+
+  #header_nav_menu li.herramientas-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/herramientas.svg);
+  }
+
+  #header_nav_menu li.marketplace-item > a:before {
+    background-image: url(https://sermadre.com/blog/wp-content/uploads/2021/12/marketplace.svg);
+  }
+
+  .hr-col-2,
+  .register-container,
+  .login-text {
+    display: none;
+  }
+  .avatar-container {
+    justify-content: end;
+  }
+
+  .avatar-container .avatar {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .footer-row {
+    display: block;
+  }
+
+  footer .custom-logo-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sendy-fn-row {
+    padding-right: 30px;
+  }
+
+  .social-media-container {
+    justify-content: center;
+  }
+
+  .recent-title hr {
+    display: none;
+  }
+
+  .recent-title h2 span:nth-child(1) {
+    display: none;
+  }
+
+  .recent-title h2 span:nth-child(2) {
+    display: inline;
+  }
+
+  .hero-section {
+    padding: 60px 20px 60px 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .serma-author-extra-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serma-info-container,
+  .serma-author-basic-info {
+    text-align: center;
+  }
+
+  .serma-info-container {
+    margin-top: 16px;
+  }
+  .serma-info-container.ml-2 {
+    margin-left: 0px;
+  }
+
+  .search-section .search-container {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: white;
+  }
+
+  .search-section .search-container input {
+    width: 90%;
+  }
+
+  .serma-cta-baby-names.d-flex,
+  .serma-form-container.d-flex {
+    flex-direction: column;
+  }
+
+  .serma-cta-baby-names .serma-cta-image-container,
+  .serma-cta-baby-names .basic-info input,
+  .serma-cta-baby-names .serma-cta-container {
+    width: 100%;
+  }
+
+  .serma-cta-baby-names .basic-info input {
+    margin: 10px 0px;
+  }
+
+  .serma-cta-baby-names .serma-cta-container {
+    padding: 30px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .entry-content {
+    padding-left: 0px;
+  }
+  .hamburger-container {
+    display: none;
+  }
+}

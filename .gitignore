@@ -1,0 +1,13 @@
+.DS_Store
+/composer.lock
+/phpcs.xml
+node_modules/
+vendor/
+
+# Artifacts
+process.yml
+*.zip
+*.*.json
+fontawesome-5.15.4
+*.code-workspace
+*.todo
