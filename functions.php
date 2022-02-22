@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', 'enqueue_child_theme_styles', 100);
 
 function enqueue_child_theme_styles()
 {
-    wp_enqueue_style('root-style-child', get_stylesheet_uri(), array('root-style'), '1.0.0');
+    wp_enqueue_style('root-style-child', get_stylesheet_uri(), array('root-style'), '1.0.1.0');
 }
 
 /**
@@ -65,8 +65,9 @@ function serma_additional_profile_fields($user)
 {
 
     $job_title = get_the_author_meta('serma_job_title', $user->ID);
-    $serma_speciality = get_the_author_meta('serma_speciality', $user->ID);
-    $serma_education = get_the_author_meta('serma_education', $user->ID);
+    $serma_facebook = get_the_author_meta('serma_facebook', $user->ID);
+    $serma_instagram = get_the_author_meta('serma_instagram', $user->ID);
+    $serma_telephone = get_the_author_meta('serma_telephone', $user->ID);
 
     ?>
     <h3>Información pública</h3>
@@ -75,24 +76,30 @@ function serma_additional_profile_fields($user)
         <tr>
             <th><label for="serma_job_title">Profesión</label></th>
             <td>
-                <input type="text" id="serma_job_title" name="serma_job_title" value="<?php echo $job_title ?>">
+                <input type="text" id="serma_job_title" name="serma_job_title" placeholder="Dra, Dr, etc.." value="<?php echo $job_title ?>">
             </td>
         </tr>
 
         <tr>
-            <th><label for="serma_speciality">Especialidad</label></th>
+            <th><label for="serma_telephone">Número de teléfono</label></th>
             <td>
-                <input type="text" id="serma_speciality" name="serma_speciality" value="<?php echo $serma_speciality ?>">
+                <input type="text" id="serma_telephone" name="serma_telephone" placeholder="" value="<?php echo $serma_telephone ?>">
             </td>
         </tr>
 
         <tr>
-            <th><label for="serma_education">Educación</label></th>
+            <th><label for="serma_facebook">Facebook</label></th>
             <td>
-                <input type="text" id="serma_education" name="serma_education" value="<?php echo $serma_education ?>">
+                <input type="text" id="serma_facebook" name="serma_facebook" placeholder="https://facebook.com/usuario" value="<?php echo $serma_facebook ?>">
             </td>
         </tr>
 
+        <tr>
+            <th><label for="serma_instagram">Instagram</label></th>
+            <td>
+                <input type="text" id="serma_instagram" name="serma_instagram" placeholder="https://www.instagram.com/usuario" value="<?php echo $serma_instagram ?>">
+            </td>
+        </tr>
     </table>
 <?php
 }
@@ -113,8 +120,9 @@ function serma_save_profile_fields($user_id)
     }
 
     update_usermeta($user_id, 'serma_job_title', $_POST['serma_job_title']);
-    update_usermeta($user_id, 'serma_speciality', $_POST['serma_speciality']);
-    update_usermeta($user_id, 'serma_education', $_POST['serma_education']);
+    update_usermeta($user_id, 'serma_telephone', $_POST['serma_telephone']);
+    update_usermeta($user_id, 'serma_facebook', $_POST['serma_facebook']);
+    update_usermeta($user_id, 'serma_instagram', $_POST['serma_instagram']);
 }
 
 function theme_prefix_register_elementor_locations($elementor_theme_manager)
@@ -166,6 +174,49 @@ function serma_post_ajax_handler()
     endif;
     die;
 }
+
+add_shortcode( 'serma_author_job_title_and_name', function () {
+    $html = "
+        <h2 style='color: black; font-size: 24px'>". get_the_author_meta('serma_job_title') . ' ' . get_the_author() ."</h2>
+    ";
+    return $html;
+} );
+
+add_shortcode( 'serma_author_social_networks', function () {
+    $social_networks = [
+        [
+            'social' => 'facebook', 
+            'link' => get_the_author_meta( 'serma_facebook' ), 
+            'icon' => 'fa-facebook-f'
+        ],
+        [
+            'social' => 'instagram', 
+            'link' => get_the_author_meta( 'serma_instagram' ), 
+            'icon' => 'fa-instagram'
+        ],
+        [
+            'social' => 'whatsapp', 
+            'link' => !empty(get_the_author_meta( 'serma_telephone' )) 
+            ? 'https://wa.me/' . get_the_author_meta( 'serma_telephone' ) : '', 
+            'icon' => 'fa-whatsapp'
+        ],
+    ];
+    $html = "<div style='display: flex;'>";
+    foreach($social_networks as $social_network) {
+        if (!empty($social_network['link'])) {
+           $padding = $social_network['social'] == 'facebook' ? '15px' : '13px' ;
+           $html .= "
+                <a href='". $social_network['link'] ."'>
+                    <div style='background-color: #585CE5; border-radius: 80px; padding: 10px $padding; margin-right: 10px;'>
+                        <span class='fab ". $social_network['icon'] ."' style='font-size: 24px; color:white'></span>
+                    </div>
+                </a>
+           ";
+        }
+    };
+    $html .= "</div>";
+    return $html;
+} );
 
 add_action('root_single_after_the_content', 'serma_insert_end_content_names_cta');
 

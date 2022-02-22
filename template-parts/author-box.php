@@ -69,8 +69,8 @@ $is_show_social_js    = root_get_option( 'author_social_js' );
 
                 $author_link_target = $author_link_target ? '_blank' : '_self';
 
-                echo '<a href ="' . get_author_posts_url( $authordata->ID ) . '" target="' . $author_link_target . '"><h2 class="black-text">' . get_the_author() . '</h2></a>';
-                echo '<p class="font-weight-normal black-text">'. get_the_author_meta( 'serma_job_title' ) .'</p>';
+                echo '<a href ="' . get_author_posts_url( $authordata->ID ) . '" target="' . $author_link_target . '">
+                <h2 class="black-text">' . get_the_author_meta( 'serma_job_title' ) . ' ' . get_the_author() . '</h2></a>';
             } else {
 
                 echo '<h2 class="black-text">' . get_the_author() . '</h2>';
@@ -85,8 +85,6 @@ $is_show_social_js    = root_get_option( 'author_social_js' );
             <!--noindex--><?php echo wpautop( get_the_author_meta( 'description' ) ) ?><!--/noindex-->
 
         </div>
-
-
 
         <?php
 

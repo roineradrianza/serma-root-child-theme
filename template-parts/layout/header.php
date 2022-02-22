@@ -97,7 +97,7 @@
 
                     } else {
 
-                        echo '<div class="site-logotype hr-col-1">' . $root_logotype_html . '</div>';
+                        echo '<div class="site-logotype hr-col-1"><a href="'. esc_url( home_url( '/' ) ) .'">' . $root_logotype_html . '</a></div>';
 
                     }
 
