@@ -225,6 +225,14 @@ function serma_insert_end_content_names_cta($content) {
     return $ad_code;
 }
 
+add_Action('wp_head', 'serma_post_headings_style');
+
+function serma_post_headings_style () {
+    if (is_single()) {
+        wp_enqueue_style('serma-post-headings', get_stylesheet_directory_uri() . '/assets/css/post-headings.css', '', '1.0.0');
+    }
+}
+
 add_action('wp_ajax_serma_post_ajax', 'serma_post_ajax_handler');
 add_action('wp_ajax_nopriv_serma_post_ajax', 'serma_post_ajax_handler');
 
